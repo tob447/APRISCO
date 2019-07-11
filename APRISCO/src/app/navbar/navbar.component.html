@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand">
+    <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    APRISCO
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <!---<li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a class="nav-item nav-link active" href="/">Home</a></li>-->
+      <li routerLinkActive="active"><a class="nav-item nav-link active" *ngIf="!_auth.isLoggedIn()"
+          href="signup">Signup</a></li>
+      <li routerLinkActive="active"><a class="nav-item nav-link active" *ngIf="!_auth.isLoggedIn()" href="login">Login
+        </a></li>
+      <!---<li routerLinkActive="active"><a class="nav-item nav-link active" *ngIf="_auth.isLoggedIn()" href="allPlants">Plants</a></li>-->
+      <li><a class="nav-item nav-link active" *ngIf="_auth.isLoggedIn()" href="javascript:void(0)" (click)="doLogout()">Logout</a></li>
+    </div>
+  </div>
+</nav>
