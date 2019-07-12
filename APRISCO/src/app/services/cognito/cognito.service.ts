@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 import {FlashMessage} from 'angular-flash-message';
 
 const poolData = {
-    UserPoolId: 'us-east-1_avY2sNU69', // Your user pool id here
-    ClientId: '5j3pavos2q8vi1jaffoj70l7t0' // Your client id here  
+    UserPoolId: '******', // Your user pool id here
+    ClientId: '*******' // Your client id here  
 };
 
 const userPool = new CognitoUserPool(poolData);
