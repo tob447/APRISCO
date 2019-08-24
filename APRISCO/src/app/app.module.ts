@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {CognitoService} from "./services/cognito/cognito.service";
 //import { HomeComponent } from './home/home.component';
-//import { AllPlantsComponent } from './all-plants/all-plants.component';
+import { VerPlantaComponent } from './ver-planta/ver-planta.component';
 
 
 @NgModule({
@@ -20,9 +20,9 @@ import {CognitoService} from "./services/cognito/cognito.service";
     AppComponent,
     SignupComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    VerPlantaComponent
     //HomeComponent
-    //AllPlantsComponent
   ],
   imports: [
     BrowserModule,
