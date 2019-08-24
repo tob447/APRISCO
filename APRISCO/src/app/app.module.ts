@@ -11,8 +11,8 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {CognitoService} from "./services/cognito/cognito.service";
-import { HomeComponent } from './home/home.component';
-import { AllPlantsComponent } from './all-plants/all-plants.component';
+//import { HomeComponent } from './home/home.component';
+//import { AllPlantsComponent } from './all-plants/all-plants.component';
 
 
 @NgModule({
